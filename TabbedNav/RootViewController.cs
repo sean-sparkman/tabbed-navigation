@@ -29,7 +29,7 @@ namespace TabbedNav
 			*/
 
 			/* METHOD 3 */
-
+			/*
 			this.BeginInvokeOnMainThread (() => {
 				var timer = new Timer(new TimerCallback((state) => {
 					this.BeginInvokeOnMainThread (() => {
@@ -37,6 +37,8 @@ namespace TabbedNav
 					});
 				}), null, 500, Timeout.Infinite);
 			});
+			*/
+			PerformSegue ("OtherStuff", this);
 		}
 	}
 }
